@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="../assets/css/custom.css" rel="stylesheet">
+  <title>Leanfield.io - AWS Certified Cloud Practitioner Mind Map</title>
+  <script>
+    $( function() {
+      $( "#btn_all" ).on( "click", function() {
+        $( "#master" ).toggleClass( "focus", 500 );
+        $( "#btn_all" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_pillars" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#pillars" ).toggleClass( "focus", 500 );
+        $( "#btn_pillars" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_darkmode" ).on( "click", function() {
+        $( ".colortoggle" ).toggleClass( "dark", 500 );
+      });
+    } );
+    </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <nav>
+        <a href="https://mindmaps.leanfield.io"><h2 class="logo">mindmaps</h2></a>
+        <ul>
+          <li>
+            <button id="btn_all" class="selected cta-contact">ALL</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button id="btn_pillars_title" class="cta-contact" disabled>TODO</button>
+         </li>
+        <button id="btn_darkmode" class="cta-contact">light/dark mode</button>
+      </nav>
+    </header>
+    <main class="page-main colortoggle">
+      <div>
+        <img src="img/Certified Cloud Practitioner Master.png" class="img-fluid stack focus" alt="Master" id="master">
+      </div>
+    </main>
+    <!-- <footer class="page-footer">
+      <small>© Copyright 2018. All rights reserved.</small>
+      <ul>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer> -->
+  </div>
+</body>
+
+</html>

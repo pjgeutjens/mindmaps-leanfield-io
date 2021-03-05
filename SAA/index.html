@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link href="../assets/css/custom.css" rel="stylesheet">
+  <title>Leanfield.io - AWS Solutions Architect Associate Mind Map</title>
+  <script>
+    $( function() {
+      $( "#btn_all" ).on( "click", function() {
+        $( "#master" ).toggleClass( "focus", 500 );
+        $( "#btn_all" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_pillars" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#pillars" ).toggleClass( "focus", 500 );
+        $( "#btn_pillars" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_operational" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#operational_excellence" ).toggleClass( "focus", 500 );
+        $( "#btn_operational" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_performance" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#performance_efficiency" ).toggleClass( "focus", 500 );
+        $( "#btn_performance" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_cost" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#cost" ).toggleClass( "focus", 500 );
+        $( "#btn_cost" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_reliability" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#reliability" ).toggleClass( "focus", 500 );
+        $( "#btn_reliability" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_security" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#security" ).toggleClass( "focus", 500 );
+        $( "#btn_security" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_serverless" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#serverless" ).toggleClass( "focus", 500 );
+        $( "#btn_serverless" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_service_tier" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#service_tier" ).toggleClass( "focus", 500 );
+        $( "#btn_service_tier" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_containers" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#containers" ).toggleClass( "focus", 500 );
+        $( "#btn_containers" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_networking" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#networking" ).toggleClass( "focus", 500 );
+        $( "#btn_networking" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_identity" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#identity" ).toggleClass( "focus", 500 );
+        $( "#btn_identity" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_directory" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#directory_services" ).toggleClass( "focus", 500 );
+        $( "#btn_directory" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_labs" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#labs" ).toggleClass( "focus", 500 );
+        $( "#btn_labs" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_darkmode" ).on( "click", function() {
+        $( ".colortoggle" ).toggleClass( "dark", 500 );
+      });
+    } );
+    </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <nav>
+        <a href="https://mindmaps.leanfield.io"><h2 class="logo">mindmaps</h2></a>
+        <ul>
+          <li>
+            <button id="btn_all" class="selected cta-contact">ALL</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button id="btn_pillars_title" class="cta-contact" disabled>Pillars</button>
+         </li>
+          <li>
+            <button id="btn_pillars" class="cta-contact">WAF Pillars</button>
+         </li>
+          <li>
+            <button id="btn_operational" class="cta-contact">Operational Excellence</button>
+          </li>
+          <li>
+            <button id="btn_performance" class="cta-contact">Performance Efficiency</button>
+          </li>
+          <li>
+            <button id="btn_cost" class="cta-contact">Cost Optimization</button>
+          </li>
+          <li>
+            <button id="btn_reliability" class="cta-contact">Reliability</button>
+          </li>
+          <li>
+            <button id="btn_security" class="cta-contact">Security</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button id="btn_pillars_title" class="cta-contact" disabled>Topics</button>
+         </li>
+          <li>
+            <button id="btn_serverless" class="cta-contact">Serverless</button>
+          </li>
+          <li>
+            <button id="btn_service_tier" class="cta-contact">Service Tier Selection</button>
+          </li>
+          <li>
+            <button id="btn_containers" class="cta-contact">Containers</button>
+          </li>
+          <li>
+            <button id="btn_networking" class="cta-contact">Networking</button>
+          </li>
+          <li>
+            <button id="btn_identity" class="cta-contact">Identity</button>
+          </li>
+          <li>
+            <button id="btn_directory" class="cta-contact">Directory Services</button>
+          </li>
+          <li>
+            <button id="btn_labs" class="cta-contact">Labs</button>
+          </li>
+        </ul>
+        <button id="btn_darkmode" class="cta-contact">light/dark mode</button>
+      </nav>
+    </header>
+    <main class="page-main colortoggle">
+      <div>
+        <img src="img/Solutions Architect Associate Background.png" class="img-fluid stack focus" alt="Master" id="background">
+        <img src="img/Solutions Architect Associate Master.png" class="img-fluid stack focus" alt="Master" id="master">
+        <img src="img/Solutions Architect Associate WAF Pillars.png" class="img-fluid stack" alt="Master" id="pillars">
+        <img src="img/Solutions Architect Associate Security.png" class="img-fluid stack" alt="Security" id="security">
+        <img src="img/Solutions Architect Associate Operational Excellence.png" class="img-fluid stack" alt="Operational" id="operational_excellence">
+        <img src="img/Solutions Architect Associate Performance Efficiency.png" class="img-fluid stack" alt="Performance" id="performance_efficiency">
+        <img src="img/Solutions Architect Associate Reliability.png" class="img-fluid stack" alt="Reliability" id="reliability">
+        <img src="img/Solutions Architect Associate Cost.png" class="img-fluid stack" alt="Cost" id="cost">
+        <img src="img/Solutions Architect Associate Serverless.png" class="img-fluid stack" alt="Serverless" id="serverless">
+        <img src="img/Solutions Architect Associate Containers.png" class="img-fluid stack" alt="Containers" id="containers">
+        <img src="img/Solutions Architect Associate Identity.png" class="img-fluid stack" alt="Identity" id="identity">
+        <img src="img/Solutions Architect Associate Directory Services.png" class="img-fluid stack" alt="Directory Services" id="directory_services">
+        <img src="img/Solutions Architect Associate Networking.png" class="img-fluid stack" alt="Networking" id="networking">
+        <img src="img/Solutions Architect Associate Service Tier.png" class="img-fluid stack" alt="Services" id="service_tier">
+        <img src="img/Solutions Architect Associate Labs.png" class="img-fluid stack" alt="Services" id="labs">
+      </div>
+    </main>
+    <!-- <footer class="page-footer">
+      <small>© Copyright 2018. All rights reserved.</small>
+      <ul>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            <i class="icon ion-logo-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer> -->
+  </div>
+</body>
+
+</html>
