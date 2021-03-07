@@ -101,6 +101,35 @@
       $( "#btn_darkmode" ).on( "click", function() {
         $( ".colortoggle" ).toggleClass( "dark", 500 );
       });
+      $( "#btn_zoom_100" ).on( "click", function() {
+        $( "#btn_zoom_100" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(1)');
+      });
+      $( "#btn_zoom_125" ).on( "click", function() {
+        $( "#btn_zoom_125" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+
+        $(".stack").css('transform', 'scale(1.25)');
+      });
+      $( "#btn_zoom_150" ).on( "click", function() {
+        $( "#btn_zoom_150" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(1.5)');
+      });
+      $( "#btn_zoom_150" ).on( "click", function() {
+        $( "#btn_zoom_200" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(2)');
+      });
     } );
     </script>
   <title>Document</title>
@@ -165,6 +194,24 @@
             <button id="btn_labs" class="cta-contact">Labs</button>
           </li>
         </ul>
+        <ul>
+          <li>
+            <button id="btn_pillars_title" class="cta-contact" disabled>Zoom</button>
+         </li>
+         <li>
+          <button id="btn_zoom_100" class="cta-contact selected">100%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_125" class="cta-contact">125%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_150" class="cta-contact">150%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_200" class="cta-contact">200%</button>
+        </li>
+      </ul>
+        
         <button id="btn_darkmode" class="cta-contact">light/dark mode</button>
       </nav>
     </header>

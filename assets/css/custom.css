@@ -83,6 +83,7 @@ button:disabled {
   /* font-size: 1.2rem; */
   padding: 5px;
   border-radius: 5px;
+  z-index: 999;
 }
 
 /* STACKING 
@@ -94,6 +95,8 @@ button:disabled {
         height: 95%;
         margin: 50px;
         opacity: 10%;
+        /* transform: scale(1.25); */
+        z-index: -100;
       }
 
 .focus {
