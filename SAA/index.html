@@ -118,15 +118,15 @@
       });
       $( "#btn_zoom_150" ).on( "click", function() {
         $( "#btn_zoom_150" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
         $( "#btn_zoom_125" ).removeClass( "selected", 500 );
-        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
         $( "#btn_zoom_200" ).removeClass( "selected", 500 );
         $(".stack").css('transform', 'scale(1.5)');
       });
-      $( "#btn_zoom_150" ).on( "click", function() {
+      $( "#btn_zoom_200" ).on( "click", function() {
         $( "#btn_zoom_200" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
         $( "#btn_zoom_125" ).removeClass( "selected", 500 );
-        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
         $( "#btn_zoom_150" ).removeClass( "selected", 500 );
         $(".stack").css('transform', 'scale(2)');
       });
