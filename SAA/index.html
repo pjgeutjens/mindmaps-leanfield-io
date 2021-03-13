@@ -106,6 +106,8 @@
         $( "#btn_zoom_125" ).removeClass( "selected", 500 );
         $( "#btn_zoom_150" ).removeClass( "selected", 500 );
         $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('top', '10%');
+        $(".stack").css('left', '10%');
         $(".stack").css('transform', 'scale(1)');
       });
       $( "#btn_zoom_125" ).on( "click", function() {
@@ -113,7 +115,8 @@
         $( "#btn_zoom_100" ).removeClass( "selected", 500 );
         $( "#btn_zoom_150" ).removeClass( "selected", 500 );
         $( "#btn_zoom_200" ).removeClass( "selected", 500 );
-
+        $(".stack").css('top', '15%');
+        $(".stack").css('left', '15%');
         $(".stack").css('transform', 'scale(1.25)');
       });
       $( "#btn_zoom_150" ).on( "click", function() {
@@ -121,6 +124,8 @@
         $( "#btn_zoom_100" ).removeClass( "selected", 500 );
         $( "#btn_zoom_125" ).removeClass( "selected", 500 );
         $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('top', '25%');
+        $(".stack").css('left', '25%');
         $(".stack").css('transform', 'scale(1.5)');
       });
       $( "#btn_zoom_200" ).on( "click", function() {
@@ -128,6 +133,8 @@
         $( "#btn_zoom_100" ).removeClass( "selected", 500 );
         $( "#btn_zoom_125" ).removeClass( "selected", 500 );
         $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $(".stack").css('top', '50%');
+        $(".stack").css('left', '50%');
         $(".stack").css('transform', 'scale(2)');
       });
     } );
