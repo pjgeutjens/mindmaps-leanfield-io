@@ -8,7 +8,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link href="../assets/css/custom.css" rel="stylesheet">
-  <title>Leanfield.io - AWS Certified Cloud Practitioner Mind Map</title>
+  <title>Leanfield.io - AWS Solutions Architect Associate Mind Map</title>
   <script>
     $( function() {
       $( "#btn_all" ).on( "click", function() {
@@ -21,8 +21,105 @@
         $( "#pillars" ).toggleClass( "focus", 500 );
         $( "#btn_pillars" ).toggleClass( "selected", 500 );
       });
+      $( "#btn_shared_responsibility" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#shared_responsibility" ).toggleClass( "focus", 500 );
+        $( "#btn_shared_responsibility" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_services" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#services" ).toggleClass( "focus", 500 );
+        $( "#btn_services" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_identity" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#identity" ).toggleClass( "focus", 500 );
+        $( "#btn_identity" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_compute" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#compute" ).toggleClass( "focus", 500 );
+        $( "#btn_compute" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_storage" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#storage" ).toggleClass( "focus", 500 );
+        $( "#btn_storage" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_databases" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#databases" ).toggleClass( "focus", 500 );
+        $( "#btn_databases" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_billing" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#billing" ).toggleClass( "focus", 500 );
+        $( "#btn_billing" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_ai" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#ai" ).toggleClass( "focus", 500 );
+        $( "#btn_ai" ).toggleClass( "selected", 500 );
+
+      });
+      $( "#btn_governance" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#governance" ).toggleClass( "focus", 500 );
+        $( "#btn_governance" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_infra" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#infra" ).toggleClass( "focus", 500 );
+        $( "#btn_infra" ).toggleClass( "selected", 500 );
+      });
+      $( "#btn_network" ).on( "click", function() {
+        $( "#master" ).removeClass("focus", 500)
+        $( "#btn_all" ).removeClass("selected", 500)
+        $( "#network" ).toggleClass( "focus", 500 );
+        $( "#btn_network" ).toggleClass( "selected", 500 );
+      });
       $( "#btn_darkmode" ).on( "click", function() {
         $( ".colortoggle" ).toggleClass( "dark", 500 );
+      });
+      $( "#btn_zoom_100" ).on( "click", function() {
+        $( "#btn_zoom_100" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(1)');
+      });
+      $( "#btn_zoom_125" ).on( "click", function() {
+        $( "#btn_zoom_125" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+
+        $(".stack").css('transform', 'scale(1.25)');
+      });
+      $( "#btn_zoom_150" ).on( "click", function() {
+        $( "#btn_zoom_150" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_200" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(1.5)');
+      });
+      $( "#btn_zoom_200" ).on( "click", function() {
+        $( "#btn_zoom_200" ).toggleClass( "selected", 500 );
+        $( "#btn_zoom_100" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_125" ).removeClass( "selected", 500 );
+        $( "#btn_zoom_150" ).removeClass( "selected", 500 );
+        $(".stack").css('transform', 'scale(2)');
       });
     } );
     </script>
@@ -41,14 +138,93 @@
         </ul>
         <ul>
           <li>
-            <button id="btn_pillars_title" class="cta-contact" disabled>TODO</button>
+            <button id="btn_pillars_title" class="cta-contact" disabled>Principles</button>
          </li>
-        <button id="btn_darkmode" class="cta-contact">light/dark mode</button>
+          <li>
+            <button id="btn_pillars" class="cta-contact">WAF Pillars</button>
+         </li>
+          <li>
+            <button id="btn_shared_responsibility" class="cta-contact">Shared Responsibility</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button id="btn_pillars_title" class="cta-contact" disabled>Topics</button>
+         </li>
+          <li>
+            <button id="btn_identity" class="cta-contact">Identity/Security</button>
+          </li>
+          <li>
+            <button id="btn_infra" class="cta-contact">Infrastructure</button>
+          </li>
+          <li>
+            <button id="btn_network" class="cta-contact">Networking</button>
+          </li>
+          <li>
+            <button id="btn_compute" class="cta-contact">Compute</button>
+          </li>
+          <li>
+            <button id="btn_storage" class="cta-contact">Storage</button>
+          </li>
+          <li>
+            <button id="btn_databases" class="cta-contact">Databases</button>
+          </li>
+          <li>
+            <button id="btn_billing" class="cta-contact">Billing/Cost</button>
+          </li>
+          <li>
+            <button id="btn_ai" class="cta-contact">AI</button>
+          </li>
+          <li>
+            <button id="btn_governance" class="cta-contact">Governance</button>
+          </li>
+          <li>
+            <button id="btn_services" class="cta-contact">Services</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button id="btn_zoom_title" class="cta-contact" disabled>Zoom</button>
+         </li>
+         <li>
+          <button id="btn_zoom_100" class="cta-contact selected">100%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_125" class="cta-contact">125%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_150" class="cta-contact">150%</button>
+        </li>
+        <li>
+          <button id="btn_zoom_200" class="cta-contact">200%</button>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <button id="btn_darkmode" class="cta-contact">light/dark mode</button>
+        </li>
+        <li>
+          <button id="btn_dl" class="cta-contact"><a href="img/Certified Cloud Practitioner Master.png" download="leanfield.io - Certified Cloud Practitioner.png">Download</a></button>
+        </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main colortoggle">
       <div>
+        <img src="img/Certified Cloud Practitioner Background.png" class="img-fluid stack focus" alt="Master" id="background">
         <img src="img/Certified Cloud Practitioner Master.png" class="img-fluid stack focus" alt="Master" id="master">
+        <img src="img/Certified Cloud Practitioner WAF Pillars.png" class="img-fluid stack" alt="Pillars" id="pillars">
+        <img src="img/Certified Cloud Practitioner Identity Security.png" class="img-fluid stack" alt="Identity" id="identity">
+        <img src="img/Certified Cloud Practitioner Compute.png" class="img-fluid stack" alt="Compute" id="compute">
+        <img src="img/Certified Cloud Practitioner Billing.png" class="img-fluid stack" alt=Billing" id="billing">
+        <img src="img/Certified Cloud Practitioner Databases.png" class="img-fluid stack" alt="Databases" id="databases">
+        <img src="img/Certified Cloud Practitioner Governance.png" class="img-fluid stack" alt="Governance" id="governance">
+        <img src="img/Certified Cloud Practitioner Network.png" class="img-fluid stack" alt="Network" id="network">
+        <img src="img/Certified Cloud Practitioner Services.png" class="img-fluid stack" alt="Services" id="services">
+        <img src="img/Certified Cloud Practitioner Shared Responsibility.png" class="img-fluid stack" alt="Shared Responsibility" id="shared_responsibility">
+        <img src="img/Certified Cloud Practitioner Storage.png" class="img-fluid stack" alt="Storage" id="storage">
+        <img src="img/Certified Cloud Practitioner Infra.png" class="img-fluid stack" alt="Infra" id="infra">
+        <img src="img/Certified Cloud Practitioner AI.png" class="img-fluid stack" alt="AI" id="ai">
       </div>
     </main>
     <!-- <footer class="page-footer">
